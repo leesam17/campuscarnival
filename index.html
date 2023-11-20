@@ -54,7 +54,7 @@
 </head>
 <body>
 
-  <form id="feedbackForm" action="process_form.php" method="post">
+  <form id="feedbackForm" action="/.netlify/functions/submitForm" method="post">
     <label for="age">Age Group:</label>
     <select id="age" name="age">
       <option value="16-19">16-19</option>
@@ -81,7 +81,7 @@
     <label for="feedback">Feedback about Campus Carnival:</label>
     <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback..." required></textarea>
 
-    <button type="button" onclick="submitForm()">Submit Feedback</button>
+    <button type="submit">Submit Feedback</button>
   </form>
 
 
